@@ -51,28 +51,19 @@ export default function Hero() {
           >
             email ↗
           </a>
-          <span className="inline-flex items-center gap-2 rounded border border-line px-4 py-2 text-ink-faint cursor-default select-none">
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="-rotate-12 shrink-0"
-              aria-hidden="true"
-            >
-              <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" />
-            </svg>
-            resume · coming soon
-          </span>
+          <a
+            href="/Arielle_Haryanto_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-line px-4 py-2 rounded hover:bg-indigo hover:border-indigo hover:text-cream active:scale-[0.97] transition-[color,background-color,border-color,transform] duration-150 motion-reduce:transition-colors"
+          >
+            resume ↗
+          </a>
         </div>
       </div>
 
       {/* balances the empty right side on wide screens — a photo pinned into the opening page */}
-      <div className="hidden lg:block absolute right-10 xl:right-20 top-1/2 -translate-y-1/2 w-52 xl:w-60">
+      <div className="hidden lg:block absolute right-16 xl:right-28 top-1/2 -translate-y-1/2 w-64 xl:w-72">
         <div className="relative -rotate-3">
           <CoverPlaceholder hideTape accent="indigo" className="w-full aspect-[4/5]" />
           <span className="absolute top-1 left-1 w-3.5 h-3.5 border-t-2 border-l-2 border-indigo" aria-hidden="true" />
