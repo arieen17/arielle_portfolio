@@ -52,14 +52,36 @@ export default function IntroCover() {
       return;
     }
 
-    let raf = requestAnimationFrame(() => {
-      raf = requestAnimationFrame(() => setWrite(true));
-    });
-    autoOpenTimer.current = setTimeout(startOpening, 4200);
+    let raf;
+    let cancelled = false;
+    const begin = () => {
+      if (cancelled) return;
+      raf = requestAnimationFrame(() => {
+        raf = requestAnimationFrame(() => setWrite(true));
+      });
+      autoOpenTimer.current = setTimeout(startOpening, 4200);
+    };
+
+    // Wait for the Dancing Script webfont before starting the write-on
+    // wipe. Starting early risks the font-display:swap fallback-to-real
+    // font swap landing mid-transition: the glyph metrics change while
+    // clip-path is animating, which can leave the reveal looking like it
+    // stopped short on the last character. Race against a short timeout
+    // so a slow/failed font load never blocks the intro indefinitely.
+    if (document.fonts && document.fonts.ready) {
+      Promise.race([
+        document.fonts.ready,
+        new Promise((resolve) => setTimeout(resolve, 800)),
+      ]).then(begin);
+    } else {
+      begin();
+    }
+
     const onKey = () => handleInteract();
     window.addEventListener("keydown", onKey);
 
     return () => {
+      cancelled = true;
       cancelAnimationFrame(raf);
       clearTimeout(autoOpenTimer.current);
       clearTimeout(hideTimer.current);

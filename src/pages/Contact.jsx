@@ -35,23 +35,14 @@ export default function Contact() {
         >
           email ↗
         </a>
-        <span className="inline-flex items-center gap-2 rounded font-mono text-[13px] border border-line px-4 py-2 text-ink-faint cursor-default select-none">
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="-rotate-12 shrink-0"
-            aria-hidden="true"
-          >
-            <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" />
-          </svg>
-          resume · coming soon
-        </span>
+        <a
+          href="/Arielle_Haryanto_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded font-mono text-[13px] border border-line px-4 py-2 transition-colors hover:bg-indigo hover:border-indigo hover:text-cream active:scale-[0.97] duration-150 ease-out motion-reduce:active:scale-100"
+        >
+          resume ↗
+        </a>
       </div>
 
       <DraftText className="max-w-md">
