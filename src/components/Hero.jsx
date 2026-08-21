@@ -63,9 +63,15 @@ export default function Hero() {
       </div>
 
       {/* balances the empty right side on wide screens — a photo pinned into the opening page */}
-      <div className="hidden lg:block absolute right-16 xl:right-28 top-1/2 -translate-y-1/2 w-64 xl:w-72">
+      <div className="hidden lg:block absolute right-24 xl:right-40 top-1/2 -translate-y-1/2 w-72 xl:w-96">
         <div className="relative -rotate-3">
-          <CoverPlaceholder hideTape accent="indigo" className="w-full aspect-[4/5]" />
+          <CoverPlaceholder
+            hideTape
+            accent="indigo"
+            image="/images/me/arielle.JPG"
+            imageAlt="Arielle Haryanto on the UC Riverside campus"
+            className="w-full aspect-[4/5]"
+          />
           <span className="absolute top-1 left-1 w-3.5 h-3.5 border-t-2 border-l-2 border-indigo" aria-hidden="true" />
           <span className="absolute top-1 right-1 w-3.5 h-3.5 border-t-2 border-r-2 border-indigo" aria-hidden="true" />
           <span className="absolute bottom-1 left-1 w-3.5 h-3.5 border-b-2 border-l-2 border-indigo" aria-hidden="true" />

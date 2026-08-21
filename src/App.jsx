@@ -14,6 +14,7 @@ import CaseStudy from "./pages/CaseStudy";
 import Everwood from "./pages/case-studies/Everwood";
 import Reneal from "./pages/case-studies/Reneal";
 import Rate from "./pages/case-studies/Rate";
+import Northstar from "./pages/case-studies/Northstar";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/work/everwood" element={<Everwood />} />
           <Route path="/work/reneal" element={<Reneal />} />
           <Route path="/work/rate" element={<Rate />} />
+          <Route path="/work/northstar" element={<Northstar />} />
           <Route path="/work/:slug" element={<CaseStudy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

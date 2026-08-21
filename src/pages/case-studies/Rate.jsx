@@ -41,7 +41,7 @@ export default function Rate() {
             ← back to journal
           </Link>
           <p className="font-mono text-[11px] text-indigo-soft mb-4 mt-10">
-            ENTRY 03 · 2025 · CS180 SOFTWARE ENGINEERING
+            ENTRY 04 · 2025 · CS180 SOFTWARE ENGINEERING
           </p>
           <h1 className="font-serif text-4xl md:text-6xl leading-[0.98] max-w-2xl">
             R'ATE
@@ -246,13 +246,24 @@ export default function Rate() {
             <p className="font-mono text-[11px] uppercase tracking-wide text-indigo-soft mb-3">
               competitive landscape
             </p>
-            <div className="border border-line p-4 max-w-sm">
-              <p className="font-serif text-lg mb-2">Beli</p>
-              <p className="text-[13px] leading-relaxed">
-                A social, friend-based restaurant-ranking app: the closest
-                existing comparison for what R'ATE wanted to do, just one
-                level down, at the dish rather than the restaurant.
-              </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="border border-line p-4">
+                <p className="font-serif text-lg mb-2">Beli</p>
+                <p className="text-[13px] leading-relaxed">
+                  A social, friend-based restaurant-ranking app: the closest
+                  existing comparison for what R'ATE wanted to do, just one
+                  level down, at the dish rather than the restaurant.
+                </p>
+              </div>
+              <div className="border border-line p-4">
+                <p className="font-serif text-lg mb-2">Yelp</p>
+                <p className="text-[13px] leading-relaxed">
+                  The default for restaurant reviews, but rates the
+                  restaurant as a whole. A 4.5-star spot can still serve
+                  dishes not worth ordering, with nothing in the rating to
+                  warn you which ones.
+                </p>
+              </div>
             </div>
           </div>
           <figure className="border border-line">
