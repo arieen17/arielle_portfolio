@@ -97,7 +97,7 @@ export default function Everwood() {
             ← back to journal
           </Link>
           <p className="font-mono text-[11px] text-terracotta-soft mb-4 mt-10">
-            ENTRY 01 · 2026 · RICE DESIGNATHON
+            ENTRY 02 · 2026 · RICE DESIGNATHON
           </p>
           <h1 className="font-serif text-4xl md:text-6xl leading-[0.98] max-w-2xl">
             Everwood

@@ -3,8 +3,22 @@
 // unrouted, as a temporary hold rather than deleted.
 export const projects = [
   {
-    slug: "everwood",
+    slug: "northstar",
     entry: "01",
+    name: "Northstar",
+    tagline: "AI-powered disaster response coordination",
+    title: "Northstar: AI-powered disaster response coordination",
+    context: "2026 · AI Tech Venture Challenge",
+    summary:
+      "A coordination platform that gives first responders unified, AI-prioritized information during a disaster's critical first 48 hours. Won 1st place overall.",
+    tags: ["Product design", "AI/UX", "Figma Make"],
+    year: "2026",
+    draft: false,
+    cover: "/images/northstar/northstarcover.png",
+  },
+  {
+    slug: "everwood",
+    entry: "02",
     name: "Everwood",
     tagline: "intergenerational story sharing",
     title: "Everwood: intergenerational story sharing",
@@ -19,7 +33,7 @@ export const projects = [
   },
   {
     slug: "reneal",
-    entry: "02",
+    entry: "03",
     name: "Reneal IEO",
     tagline: "nonprofit site redesign",
     title: "Reneal IEO: nonprofit site redesign",
@@ -29,11 +43,11 @@ export const projects = [
     tags: ["UX", "UI", "Figma", "Framer"],
     year: "2025",
     draft: false,
-    cover: null,
+    cover: "/images/reneal/cover.png",
   },
   {
     slug: "rate",
-    entry: "03",
+    entry: "04",
     name: "R'ATE",
     tagline: "a dish-level food rating app for UC Riverside",
     title: "R'ATE: a dish-level food rating app for UC Riverside",

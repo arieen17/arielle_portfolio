@@ -63,7 +63,7 @@ export default function Hero() {
       </div>
 
       {/* balances the empty right side on wide screens — a photo pinned into the opening page */}
-      <div className="hidden lg:block absolute right-16 xl:right-28 top-1/2 -translate-y-1/2 w-72 xl:w-96">
+      <div className="hidden lg:block absolute right-24 xl:right-40 top-1/2 -translate-y-1/2 w-72 xl:w-96">
         <div className="relative -rotate-3">
           <CoverPlaceholder
             hideTape

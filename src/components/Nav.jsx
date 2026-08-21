@@ -13,19 +13,19 @@ export default function Nav() {
         <nav className="flex items-center gap-6 font-mono text-[13px] text-ink-soft">
           <Link
             to="/work"
-            className="link-underline [--link-underline-offset:-10px] -my-2 py-2 hover:text-ink transition-colors"
+            className="link-underline [--link-underline-offset:-4px] -my-2 py-2 hover:text-ink transition-colors"
           >
             work
           </Link>
           <Link
             to="/about"
-            className="link-underline [--link-underline-offset:-10px] -my-2 py-2 hover:text-ink transition-colors"
+            className="link-underline [--link-underline-offset:-4px] -my-2 py-2 hover:text-ink transition-colors"
           >
             about
           </Link>
           <Link
             to="/contact"
-            className="link-underline [--link-underline-offset:-10px] -my-2 py-2 hover:text-ink transition-colors"
+            className="link-underline [--link-underline-offset:-4px] -my-2 py-2 hover:text-ink transition-colors"
           >
             contact
           </Link>

@@ -16,7 +16,7 @@ export default function Reneal() {
             ← back to journal
           </Link>
           <p className="font-mono text-[11px] text-indigo-soft mb-4 mt-10">
-            ENTRY 02 · 2025 · RENEAL IEO
+            ENTRY 03 · 2025 · RENEAL IEO
           </p>
           <h1 className="font-serif text-4xl md:text-6xl leading-[0.98] max-w-2xl">
             Reneal IEO
@@ -72,7 +72,9 @@ export default function Reneal() {
       <CoverPlaceholder
         label="cover image"
         accent="indigo"
-        className="w-full aspect-video border-x-0"
+        image="/images/reneal/cover.png"
+        imageAlt="Reneal IEO site redesign cover"
+        className="w-full max-w-2xl mx-auto aspect-[775/506] my-10"
       />
 
       {/* 01 — Overview */}
@@ -103,6 +105,40 @@ export default function Reneal() {
               split across several disconnected blocks. It needed a full
               redesign, and a move off WordPress entirely.
             </p>
+          </div>
+          <div className="grid sm:grid-cols-2 gap-6 pt-2">
+            <div>
+              <div className="relative -rotate-1">
+                <img
+                  src="/images/reneal/oldwebsite.png"
+                  alt="Reneal's old WordPress site before the redesign"
+                  className="w-full aspect-[1031/885] object-cover border border-line"
+                />
+                <span className="absolute top-1 left-1 w-3.5 h-3.5 border-t-2 border-l-2 border-indigo" aria-hidden="true" />
+                <span className="absolute top-1 right-1 w-3.5 h-3.5 border-t-2 border-r-2 border-indigo" aria-hidden="true" />
+                <span className="absolute bottom-1 left-1 w-3.5 h-3.5 border-b-2 border-l-2 border-indigo" aria-hidden="true" />
+                <span className="absolute bottom-1 right-1 w-3.5 h-3.5 border-b-2 border-r-2 border-indigo" aria-hidden="true" />
+              </div>
+              <p className="mt-3 font-mono text-[11px] uppercase tracking-wide text-ink-faint text-center">
+                before
+              </p>
+            </div>
+            <div>
+              <div className="relative rotate-1">
+                <img
+                  src="/images/reneal/after.png"
+                  alt="Reneal's redesigned site, in progress"
+                  className="w-full aspect-[1031/885] object-cover border border-line"
+                />
+                <span className="absolute top-1 left-1 w-3.5 h-3.5 border-t-2 border-l-2 border-indigo" aria-hidden="true" />
+                <span className="absolute top-1 right-1 w-3.5 h-3.5 border-t-2 border-r-2 border-indigo" aria-hidden="true" />
+                <span className="absolute bottom-1 left-1 w-3.5 h-3.5 border-b-2 border-l-2 border-indigo" aria-hidden="true" />
+                <span className="absolute bottom-1 right-1 w-3.5 h-3.5 border-b-2 border-r-2 border-indigo" aria-hidden="true" />
+              </div>
+              <p className="mt-3 font-mono text-[11px] uppercase tracking-wide text-ink-faint text-center">
+                after (in progress)
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -135,6 +171,17 @@ export default function Reneal() {
           </div>
         </div>
       </section>
+
+      <figure className="border-y border-line bg-cream-card py-10">
+        <img
+          src="/images/reneal/hifi.png"
+          alt="High-fidelity Reneal page designs: new home, what we do, computer labs, teacher training, support, and the partner ecosystem"
+          className="mx-auto max-w-2xl w-full h-auto"
+        />
+        <figcaption className="font-mono text-[11px] uppercase tracking-wide text-indigo-soft text-center mt-6">
+          high-fidelity screens
+        </figcaption>
+      </figure>
 
       {/* 03 — Where it stands */}
       <section className="max-w-content mx-auto px-6 md:px-10 py-14 md:py-16 grid md:grid-cols-[180px_1fr] gap-8 md:gap-10">

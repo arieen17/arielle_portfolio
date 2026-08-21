@@ -42,7 +42,11 @@ export default function CoverPlaceholder({
       )}
 
       {image ? (
-        <img src={image} alt={imageAlt} className="absolute inset-0 h-full w-full object-cover" />
+        <img
+          src={image}
+          alt={imageAlt}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
       ) : (
         <>
           <svg
