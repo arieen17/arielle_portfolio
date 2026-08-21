@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-19T00:00:00Z",
+  "title": "Design System: Arielle Haryanto — Field Journal Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "indigo": {
+        "role": "primary",
+        "displayName": "Sapphire",
+        "canonical": "#3C507D",
+        "tonalRamp": ["#0B1730", "#112250", "#1C3155", "#2C4068", "#3C507D", "#4B5E87", "#8C9AB8", "#E3E7ED"]
+      },
+      "gold": {
+        "role": "secondary",
+        "displayName": "Bronze / Quicksand",
+        "canonical": "#7D5E30",
+        "tonalRamp": ["#2E220F", "#4F3B1D", "#7D5E30", "#9C7A44", "#B99860", "#D0B87D", "#E0C58F", "#F2E4C9"]
+      },
+      "terracotta": {
+        "role": "tertiary",
+        "displayName": "Terracotta (Everwood-only)",
+        "canonical": "#A34526",
+        "tonalRamp": ["#2E1207", "#7A3319", "#7F4630", "#A34526", "#BD6A4A", "#D89A80", "#EDCDBC", "#F3E4D9"]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Swan Wing Paper",
+        "canonical": "#F5F0E9",
+        "tonalRamp": ["#0D0C0A", "#201F1C", "#3D3B35", "#5F5C54", "#6B675E", "#A29C8E", "#E7DDD5", "#F5F0E9"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The single hero headline only (\"Hi, I'm Arielle.\"). One per site." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings (\"Entries\") and the case-study entry title." },
+      "title": { "displayName": "Title", "purpose": "Project title inside each entry card." },
+      "body": { "displayName": "Body", "purpose": "All prose. Italic used for emphasis and asides." },
+      "label": { "displayName": "Label", "purpose": "Every piece of static metadata: entry numbers, dates, tags, section eyebrows, draft tags, footer copyright. Hard floor at 11px." },
+      "interactive-mono": { "displayName": "Interactive Mono", "purpose": "Nav-style links specifically: Nav, Footer, case-study back-links, external reference links, \"Read entry →\". One step up from Label because these act, not just inform." },
+      "hand": { "displayName": "Hand", "purpose": "Genuine handwritten moments only: the Sticky Note and Margin Note quotes, one Home aside. Never a label, CTA, or anything that must stay reliably legible." }
+    },
+    "shadows": [
+      { "name": "dog-ear-lift", "value": "0 1px 2px rgba(0,0,0,0.05)", "purpose": "The entry-card fold triangle, visible on hover only." },
+      { "name": "bookmark-tail-lift", "value": "0 1px 2px rgba(0,0,0,0.05)", "purpose": "The scroll-ribbon's hanging notch marker." },
+      { "name": "book-cover-shadow", "value": "10px 0 32px rgba(0,0,0,0.3)", "purpose": "The intro splash's cover only, one-time entrance, never reused for standing UI." },
+      { "name": "sticky-note-lift", "value": "0 1px 2px rgba(0,0,0,0.05)", "purpose": "The Sticky Note and Margin Note — a small paper square that reads as physically stuck to the page." },
+      { "name": "spine-edge", "value": "2px 0 10px rgba(0,0,0,0.25)", "purpose": "The fixed Book Spine's right edge, selling it as a bound gutter." },
+      { "name": "pin-lift", "value": "0 1px 2px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.1)", "purpose": "The small pin holding each Entry Card to the page (shadow-sm plus a 1px black/10 ring)." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "The system's primary easing: hover states, reveals, wipes, card settle." },
+      { "name": "ease-intro-flip", "value": "cubic-bezier(0.65, 0, 0.35, 1)", "purpose": "The one-time intro splash's page-turn rotation only." },
+      { "name": "duration-hover", "value": "300ms", "purpose": "Card and pill hover/color/transform transitions." },
+      { "name": "duration-entrance", "value": "700ms", "purpose": "Hero load-in stagger and scroll-triggered Reveal fade/slide." },
+      { "name": "duration-underline", "value": "250ms", "purpose": "The .link-underline hover wipe-in." },
+      { "name": "duration-heading-wipe", "value": "600ms", "purpose": "The one-time .entries-underline mount wipe under the \"Entries\" heading." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Default Button / Pill Link",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Bordered, transparent pill used for social/contact links and secondary actions. Inverts to a filled accent on hover per the Inverse Hover rule.",
+      "html": "<a class=\"ds-btn-default\" href=\"#\">linkedin ↗</a>",
+      "css": ".ds-btn-default { display: inline-block; font-family: 'Space Mono', ui-monospace, monospace; font-size: 13px; color: #201F1C; background: transparent; border: 1px solid #3C507D; border-radius: 4px; padding: 8px 16px; transition: background-color 0.15s, border-color 0.15s, color 0.15s, transform 0.15s; text-decoration: none; } .ds-btn-default:hover, .ds-btn-default:focus-visible { background: #3C507D; border-color: #3C507D; color: #F5F0E9; } .ds-btn-default:active { transform: scale(0.97); } .ds-btn-default:focus-visible { outline: 2px solid #3C507D; outline-offset: 3px; }"
+    },
+    {
+      "name": "Solid Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled indigo background, reserved for a page's single primary action (e.g. a Dialog's Confirm). Darkens on hover rather than inverting, since it has no transparent state to invert from.",
+      "html": "<button class=\"ds-btn-solid\">Confirm</button>",
+      "css": ".ds-btn-solid { font-family: 'Space Mono', ui-monospace, monospace; font-size: 13px; color: #F5F0E9; background: #3C507D; border: 1px solid #3C507D; border-radius: 4px; padding: 8px 16px; transition: background-color 0.15s, transform 0.15s; } .ds-btn-solid:hover, .ds-btn-solid:focus-visible { background: #112250; border-color: #112250; } .ds-btn-solid:active { transform: scale(0.97); }"
+    },
+    {
+      "name": "Entry / Project Card",
+      "kind": "card",
+      "refersTo": "entry-title",
+      "description": "A photo-in-a-journal grid card: fixed slight rotation that settles flat on hover, photo-corner mounts, a pin on the top edge, a growing dog-ear fold, entry number + context, serif title, tags, and a nudging \"Read entry →\".",
+      "html": "<a class=\"ds-entry-card\" href=\"#\"><span class=\"ds-entry-pin\" aria-hidden=\"true\"></span><span class=\"ds-entry-fold\" aria-hidden=\"true\"></span><div class=\"ds-entry-cover\"></div><div class=\"ds-entry-body\"><p class=\"ds-entry-context\">01 · 2026 · Rice Designathon</p><h3 class=\"ds-entry-title\">Everwood: intergenerational story sharing</h3><p class=\"ds-entry-summary\">A reciprocal story archive where elders and youth share memories, photos, and voice notes across generations.</p><span class=\"ds-entry-cta\">Read entry →</span></div></a>",
+      "css": ".ds-entry-card { position: relative; display: flex; flex-direction: column; background: #F5F0E9; border: 1px solid #E7DDD5; padding: 12px 12px 24px; text-decoration: none; color: inherit; transform: rotate(-1.5deg); transition: transform 0.3s cubic-bezier(0.23,1,0.32,1); } .ds-entry-card:hover, .ds-entry-card:focus-visible { transform: rotate(0deg) translateY(-4px); } .ds-entry-pin { position: absolute; top: -6px; left: 50%; transform: translateX(-50%); width: 12px; height: 12px; border-radius: 50%; background: #3C507D; box-shadow: 0 1px 2px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.1); } .ds-entry-fold { position: absolute; top: 0; right: 0; width: 0; height: 0; border-top: 16px solid #D9CBC2; border-left: 16px solid transparent; } .ds-entry-cover { aspect-ratio: 4 / 3; background: #D9CBC2; margin-bottom: 16px; } .ds-entry-context { font-family: 'Space Mono', monospace; font-size: 11px; color: #6B675E; margin-bottom: 6px; } .ds-entry-title { font-family: 'Fraunces', Georgia, serif; font-size: 19px; line-height: 1.3; margin: 0; } .ds-entry-card:hover .ds-entry-title { color: #3C507D; font-weight: 500; } .ds-entry-summary { font-size: 13px; color: #5F5C54; line-height: 1.6; margin-top: 8px; } .ds-entry-cta { display: inline-block; margin-top: 12px; font-family: 'Space Mono', monospace; font-size: 13px; color: #3C507D; }"
+    },
+    {
+      "name": "Cover Placeholder",
+      "kind": "custom",
+      "description": "Intentional \"not yet\" state for a missing image: hatched paper-card surface, single-stroke image icon, mono caption, optional washi-tape strip and stamp sticker.",
+      "html": "<div class=\"ds-cover-placeholder\"><svg class=\"ds-cover-icon\" width=\"28\" height=\"28\" viewBox=\"0 0 28 28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><rect x=\"1.5\" y=\"4.5\" width=\"25\" height=\"19\" rx=\"1.5\"/><circle cx=\"9\" cy=\"11\" r=\"2.25\"/><path d=\"M2.5 20.5l6.5-6.5 4 4 5-6 8.5 8.5\"/></svg><span class=\"ds-cover-caption\">cover · coming soon</span></div>",
+      "css": ".ds-cover-placeholder { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; background: #D9CBC2; border: 1px solid #E7DDD5; background-image: repeating-linear-gradient(45deg, #E7DDD5 0, #E7DDD5 1px, transparent 1px, transparent 10px); padding: 24px; } .ds-cover-icon { color: #6B675E; } .ds-cover-caption { font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.02em; color: #6B675E; }"
+    },
+    {
+      "name": "Draft Text",
+      "kind": "custom",
+      "description": "Honest placeholder for unwritten copy: a paperclip icon plus an uppercase mono \"draft\" label above italic muted prose. Never presents unfinished content as finished.",
+      "html": "<div class=\"ds-draft-text\"><p class=\"ds-draft-label\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M21 11V6a4 4 0 0 0-8 0v11a3 3 0 0 0 6 0V9\"/></svg> draft</p><p class=\"ds-draft-body\">A couple of sentences on the problem, the people involved, and what the project set out to do.</p></div>",
+      "css": ".ds-draft-label { display: flex; align-items: center; gap: 6px; font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.02em; color: #6B675E; margin-bottom: 6px; } .ds-draft-body { font-style: italic; color: #5F5C54; margin: 0; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Bordered-bottom, ruled-paper header: serif wordmark left, mono links right, a wipe-in underline on hover/focus.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-nav-wordmark\" href=\"#\">Arielle Haryanto</a><nav class=\"ds-nav-links\"><a href=\"#\">work</a><a href=\"#\">about</a><a href=\"#\">contact</a></nav></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #E7DDD5; background-image: repeating-linear-gradient(#F5F0E9, #F5F0E9 30px, #E7DDD5 31px); padding: 20px 24px; } .ds-nav-wordmark { font-family: 'Fraunces', Georgia, serif; font-size: 18px; color: #201F1C; text-decoration: none; } .ds-nav-links { display: flex; gap: 24px; font-family: 'Space Mono', monospace; font-size: 13px; } .ds-nav-links a { position: relative; color: #5F5C54; text-decoration: none; transition: color 0.2s; padding: 8px 0; } .ds-nav-links a:hover, .ds-nav-links a:focus-visible { color: #201F1C; }"
+    },
+    {
+      "name": "Sticky Note",
+      "kind": "custom",
+      "description": "The full-size handwritten reflection at the end of a case study: a rotated paper square in the page's accent tint, set in Caveat. Always the writer's real words, never invented.",
+      "html": "<div class=\"ds-sticky-note\"><p class=\"ds-sticky-label\">sticky note</p><p class=\"ds-sticky-quote\">\"The one lesson from this project I keep carrying into everything else.\"</p></div>",
+      "css": ".ds-sticky-note { display: inline-block; max-width: 24em; transform: rotate(-2deg); background: #F3E4D9; box-shadow: 0 1px 2px rgba(0,0,0,0.05); padding: 20px 24px; } .ds-sticky-label { font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.02em; color: #7F4630; margin: 0 0 8px; } .ds-sticky-quote { font-family: 'Caveat', cursive; font-weight: 600; font-size: 1.5rem; line-height: 1.25; color: #201F1C; margin: 0; }"
+    },
+    {
+      "name": "Margin Note",
+      "kind": "custom",
+      "description": "A smaller sibling of the Sticky Note sized for a case study's 180px label column: short, repeatable glossary-style callouts that restate something already true elsewhere on the page rather than inventing new claims.",
+      "html": "<div class=\"ds-margin-note\"><p class=\"ds-margin-label\">margin note</p><p class=\"ds-margin-quote\">68%, the stat that shaped the brief</p></div>",
+      "css": ".ds-margin-note { display: inline-block; max-width: 168px; transform: rotate(-2deg); background: #E3E7ED; box-shadow: 0 1px 2px rgba(0,0,0,0.05); padding: 14px 16px; } .ds-margin-label { font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.02em; color: #4B5E87; margin: 0 0 6px; } .ds-margin-quote { font-family: 'Caveat', cursive; font-weight: 600; font-size: 1.125rem; line-height: 1.3; color: #201F1C; margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Working Notebook",
+    "overview": "The site reads as a designer's own working notebook — a lab notebook or field-research log kept while doing the work, not a travel journal or a passport of places visited. That distinction is load-bearing: an early pass drew visual inspiration from a travel-passport-themed portfolio, and two mechanics (a rotating personality tagline, a book-page-turn intro splash) landed close enough to that reference to read as derivative. Both were reworked to point the metaphor back at work documented, not places visited. The journal motifs (entry numbers, margin notes, a dog-ear fold, ruled paper, a bookmark-shaped scroll marker, a washi-tape accent on cover images, a paperclip on draft copy, a handwritten sticky note) are the frame around the work — evoking a notebook actually used, not the organizing structure for the work itself. Case-study content reads as a crisp, professional document first; the journal conceit is the container, not the content hierarchy. The palette is indigo-blue paired with a warm terracotta pop, on warm paper: two considered colors, not a saturated brand wash — closer to a ship's log or field-research ledger than a corporate palette. Components are quiet and considered — thin hairline borders, minimal shadow, restrained hover states. Confidence comes from restraint, not decoration.",
+    "keyCharacteristics": [
+      "Indigo is the shell's structural accent (links, labels, system chrome); terracotta is the sitewide pop accent used sparingly for emphasis and warmth wherever a moment calls for it, not confined to one entry",
+      "Scrapbook texture in small, controlled doses — a washi-tape strip, a torn-paper reveal, a paperclip, one handwritten sticky note — sophisticated rather than craft-table cute",
+      "A fourth \"hand\" font (Caveat) exists only for genuine handwritten moments, never for real UI text or body copy",
+      "Personality lives in voice, not iconography: emoji appear only as content, never standing in for the icon system",
+      "Serif display type for content headings, monospace for all metadata/system labels",
+      "Depth from 1px hairline borders and paper texture, not shadows, with a short named list of physical-object shadow exceptions",
+      "Unfinished content marked honestly (a draft label + paperclip + placeholder treatment), never faked as finished"
+    ],
+    "rules": [
+      { "name": "The Two-Accent Rule", "body": "The shell carries exactly two saturated colors: Sapphire (structural) and Bronze/Quicksand (pop). A third saturated hue on the shell is drift; route new shell emphasis through one of these two.", "section": "colors" },
+      { "name": "Color Follows Content", "body": "A project only earns its own accent (like Everwood's terracotta) in the Entries list once it has real content — color signals \"this one is real,\" not decoration. This doesn't mean every real project gets a new unique hue; the Two-Accent Rule still caps the palette at two saturated colors sitewide.", "section": "colors" },
+      { "name": "The Serif-Announces, Mono-Labels Rule", "body": "Fraunces is reserved for actual content headings. Space Mono is reserved for metadata and system labels, always small and often uppercase/tracked. Bricolage Grotesque carries all body prose. Never mix the roles.", "section": "typography" },
+      { "name": "Label vs. Interactive Mono", "body": "The two roles are 2px apart and both Space Mono, deliberate: they read as the same family of small system text, distinguished only by whether the text does something when clicked. Don't reach for a third mono size.", "section": "typography" },
+      { "name": "The One-Hand Rule (revised)", "body": "Caveat is never used for real UI text or body copy, and appears at most once on non-case-study pages. On case-study pages specifically, the Margin Note pattern is allowed to repeat — a project with enough real content to annotate earns more than one aside.", "section": "typography" },
+      { "name": "Dots-as-Default, Rules-as-Accent", "body": "The dot grid is the ambient page texture; .bg-ruled is reserved for the handful of places already documented as ruled (site Nav, Hero, case-study header). Don't add a new ruled-paper instance outside those without good reason.", "section": "elevation" },
+      { "name": "The Borders-Not-Shadows Rule", "body": "Depth is conveyed by hairline borders and paper texture, not elevation. A new component reaching for box-shadow to separate itself from the page is working against the system unless it's a genuine physical-object exception from the named Shadow Vocabulary.", "section": "elevation" },
+      { "name": "Inverse Hover", "body": "Bordered/outline buttons and button-like pill links invert on hover — background fills with the element's own accent color, text flips to cream — rather than only recoloring the border and text. Solid keeps its darken-on-hover instead; ghost keeps a color-only hover.", "section": "components" },
+      { "name": "No Em Dashes in Written Copy", "body": "The em dash is gone from the site's own prose, labels, and section eyebrows. Verbatim third-party quotes are the one exception and keep their original em dashes exactly as given.", "section": "components" }
+    ],
+    "dos": [
+      "Do keep Indigo to text, links, and small labels — never a large background fill.",
+      "Do reach for Terracotta when a moment wants warmth or emphasis — it's a sitewide pop accent now, not locked to one entry.",
+      "Do set every metadata/system label in Space Mono, uppercase where established, at 11px, tracked.",
+      "Do separate content with 1px line borders rather than cards, shadows, or background-color blocks.",
+      "Do treat journal motifs (entry numbers, margin notes, dog-ear fold, ruled paper, washi tape, paperclip, sticky note) as accents around the content; case-study sections use real headings and plain document hierarchy first.",
+      "Do mark unfinished content with the Draft Text / Cover Placeholder pattern rather than shipping fabricated finished-looking copy.",
+      "Do animate only transform, opacity, and clip-path; respect prefers-reduced-motion on any auto-playing or entrance motion.",
+      "Do keep scrapbook touches (torn edges, tape, paperclip, sticky note) sparse and controlled — one signature moment per surface.",
+      "Do keep the Book Spine and Scroll Ribbon as the site's only two fixed viewport-edge elements — a matched pair, not a place to keep adding more fixed chrome."
+    ],
+    "donts": [
+      "Don't introduce a third saturated color; route new emphasis through Indigo (structural) or Terracotta (pop).",
+      "Don't add rounded corners above 4px to structural surfaces (sections, cards, dividers) — square, hairline-bordered edges are the system's signature.",
+      "Don't use transition: all or animate layout-triggering properties like height.",
+      "Don't let the field-journal conceit dictate case-study information architecture — it's the frame, not the structure.",
+      "Don't reach for travel/passport iconography (flags, stamps, luggage tags, \"countries visited\") — that's the anti-reference this system deliberately moved away from.",
+      "Don't use Caveat for more than one element per page (outside case-study Margin Notes), or for anything that must stay legible/functional."
+    ]
+  }
+}
