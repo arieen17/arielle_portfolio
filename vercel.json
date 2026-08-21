@@ -1,3 +1,11 @@
 {
+  "headers": [
+    {
+      "source": "/Arielle_Haryanto_Resume.pdf",
+      "headers": [
+        { "key": "Content-Disposition", "value": "inline; filename=\"Arielle_Haryanto_Resume.pdf\"" }
+      ]
+    }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
