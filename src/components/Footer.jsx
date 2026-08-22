@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex gap-5 font-mono text-[13px] text-ink-soft">
           <a
             href="mailto:arielleharyanto@gmail.com"
-            className="link-underline [--link-underline-offset:-10px] -my-2 py-2 hover:text-indigo transition-colors"
+            className="link-underline [--link-underline-offset:6px] -my-2 py-2 hover:text-indigo transition-colors"
           >
             email
           </a>
@@ -16,7 +16,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/arielle-haryanto/"
             target="_blank"
             rel="noopener noreferrer"
-            className="link-underline [--link-underline-offset:-10px] -my-2 py-2 hover:text-indigo transition-colors"
+            className="link-underline [--link-underline-offset:6px] -my-2 py-2 hover:text-indigo transition-colors"
           >
             linkedin
           </a>
@@ -24,7 +24,7 @@ export default function Footer() {
             href="https://github.com/arieen17"
             target="_blank"
             rel="noopener noreferrer"
-            className="link-underline [--link-underline-offset:-10px] -my-2 py-2 hover:text-indigo transition-colors"
+            className="link-underline [--link-underline-offset:6px] -my-2 py-2 hover:text-indigo transition-colors"
           >
             github
           </a>

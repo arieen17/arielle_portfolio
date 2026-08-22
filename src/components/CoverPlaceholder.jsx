@@ -20,6 +20,7 @@ export default function CoverPlaceholder({
   hideTape = false,
   image = null,
   imageAlt = "",
+  imageFit = "cover",
   className = "",
 }) {
   const patternId = `cover-hatch-${useId()}`;
@@ -42,11 +43,17 @@ export default function CoverPlaceholder({
       )}
 
       {image ? (
-        <img
-          src={image}
-          alt={imageAlt}
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+        imageFit === "contain" ? (
+          <div className="absolute inset-0 flex items-center justify-center p-4">
+            <img src={image} alt={imageAlt} className="max-h-full max-w-full object-contain" />
+          </div>
+        ) : (
+          <img
+            src={image}
+            alt={imageAlt}
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        )
       ) : (
         <>
           <svg
