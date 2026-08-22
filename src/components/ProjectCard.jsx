@@ -46,6 +46,7 @@ export default function ProjectCard({ project, rotate = 0 }) {
           accent={project.accent ?? "indigo"}
           image={project.cover}
           imageAlt={project.cover ? `${project.name} cover` : ""}
+          imageFit={project.coverFit}
           className="w-full aspect-[4/3]"
         />
         {/* photo-corner mounts, like a print pinned into an album */}
@@ -71,7 +72,7 @@ export default function ProjectCard({ project, rotate = 0 }) {
             draft
           </p>
         )}
-        <p className="text-[13px] text-ink-soft leading-relaxed mt-2">
+        <p className="text-[15px] text-ink-soft leading-relaxed mt-2">
           {project.summary}
         </p>
         <div className="flex-1" />

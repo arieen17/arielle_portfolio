@@ -46,6 +46,21 @@
     mix-blend-mode: multiply;
   }
 
+  .marker-highlight {
+    background-image: linear-gradient(
+      104deg,
+      transparent 0%,
+      transparent 2%,
+      rgba(224, 197, 143, 0.55) 2%,
+      rgba(224, 197, 143, 0.55) 96%,
+      transparent 96%,
+      transparent 100%
+    );
+    padding: 0.05em 0.2em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
   .torn-edge-top {
     clip-path: polygon(
       0% 60%, 3% 20%, 6% 45%, 9% 8%, 13% 55%, 17% 15%, 20% 65%, 24% 5%,

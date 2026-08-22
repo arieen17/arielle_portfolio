@@ -15,6 +15,7 @@ export const projects = [
     year: "2026",
     draft: false,
     cover: "/images/northstar/northstarcover.png",
+    coverFit: "contain",
   },
   {
     slug: "everwood",

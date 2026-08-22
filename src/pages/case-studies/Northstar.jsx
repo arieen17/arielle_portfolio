@@ -184,23 +184,34 @@ export default function Northstar() {
         <div className="max-w-2xl text-[16px] leading-relaxed text-ink-soft space-y-5">
           <p>
             Natural disasters, earthquakes, floods, wildfires, are a
-            recurring, critical issue in California, and the cost of poor
-            coordination during these events is measured in lives and
-            resources, not just dollars. Northstar is an AI-powered disaster
-            response coordination platform built to close that gap: giving
-            first responders the right information instantly, when every
-            second counts.
+            recurring, critical issue in California, and{" "}
+            <span className="font-semibold text-ink">
+              the cost of poor coordination during these events is measured
+              in lives and resources, not just dollars
+            </span>
+            . Northstar is an AI-powered disaster response coordination
+            platform built to close that gap: giving first responders{" "}
+            <span className="marker-highlight">
+              the right information instantly
+            </span>
+            , when every second counts.
           </p>
           <div>
             <p className="font-mono text-[11px] uppercase tracking-wide text-indigo-soft mb-1.5">
               the problem
             </p>
             <p>
-              The first 48 hours after a disaster are the most critical
-              window for saving lives, but the agencies responding to it,
-              government, nonprofits, and volunteers, work from fragmented,
-              duplicated data with no shared, prioritized view of what's
-              actually happening on the ground.
+              The first 48 hours after a disaster are{" "}
+              <span className="font-semibold text-ink">
+                the most critical window for saving lives
+              </span>
+              , but the agencies responding to it, government, nonprofits,
+              and volunteers, work from{" "}
+              <span className="marker-highlight">
+                fragmented, duplicated data
+              </span>{" "}
+              with no shared, prioritized view of what's actually happening
+              on the ground.
             </p>
           </div>
           <div>
@@ -224,11 +235,14 @@ export default function Northstar() {
               </div>
               <p className="text-[14px] leading-relaxed text-ink-soft mb-3">
                 An emergency response coordinator with 10+ years of
-                experience, working under intense time pressure to make
-                decisions from scattered sources: emergency calls, field
-                reports, satellite imagery, social media. Reports are often
-                incomplete or contradictory, and sorting through them by
-                hand costs time she doesn't have.
+                experience, working under{" "}
+                <span className="font-semibold text-ink">
+                  intense time pressure
+                </span>{" "}
+                to make decisions from scattered sources: emergency calls,
+                field reports, satellite imagery, social media. Reports are
+                often incomplete or contradictory, and sorting through them
+                by hand costs time she doesn't have.
               </p>
               <p className="font-hand text-lg text-indigo-soft leading-snug mb-4">
                 "When a disaster happens, I don't need more information, I
@@ -349,9 +363,15 @@ export default function Northstar() {
           <p>
             Northstar pulls from satellite and drone imagery, social media,
             911 and emergency calls, IoT sensors and weather feeds,
-            crowdsourced reports, and cell tower activity, then runs that
-            firehose of raw signal through four AI components to turn it into
-            a single, prioritized picture responders can act on.
+            crowdsourced reports, and cell tower activity, then runs{" "}
+            <span className="font-semibold text-ink">
+              that firehose of raw signal
+            </span>{" "}
+            through four AI components to turn it into{" "}
+            <span className="marker-highlight">
+              a single, prioritized picture
+            </span>{" "}
+            responders can act on.
           </p>
           <div className="grid sm:grid-cols-2 gap-x-8 gap-y-6">
             {aiComponents.map((item) => (
@@ -425,11 +445,14 @@ export default function Northstar() {
                 Awarded 1st place overall
               </p>
               <p className="text-[14px] text-ink-soft leading-relaxed">
-                Northstar won 1st place overall at the AI Tech Venture
-                Challenge 2026, hosted by The Product Club at UCR. Huge
-                thanks to judges Sid Nair, Nathan Trueblood, Travis Johnson,
-                Aaron Saltzman, and Sanjoy Moulik, Ph.D. for their time and
-                feedback.
+                Northstar{" "}
+                <span className="marker-highlight">
+                  won 1st place overall
+                </span>{" "}
+                at the AI Tech Venture Challenge 2026, hosted by The Product
+                Club at UCR. Huge thanks to judges Sid Nair, Nathan
+                Trueblood, Travis Johnson, Aaron Saltzman, and Sanjoy
+                Moulik, Ph.D. for their time and feedback.
               </p>
             </div>
           </div>
