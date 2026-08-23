@@ -16,7 +16,7 @@ export default function Reneal() {
             ← back to journal
           </Link>
           <p className="font-mono text-[11px] text-indigo-soft mb-4 mt-10">
-            ENTRY 03 · 2025 · RENEAL IEO
+            ENTRY 04 · 2025 · RENEAL IEO
           </p>
           <h1 className="font-serif text-4xl md:text-6xl leading-[0.98] max-w-2xl">
             Reneal IEO

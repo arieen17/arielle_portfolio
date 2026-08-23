@@ -3,8 +3,23 @@
 // unrouted, as a temporary hold rather than deleted.
 export const projects = [
   {
-    slug: "northstar",
+    slug: "accesstransit",
     entry: "01",
+    name: "AccessTransit",
+    tagline: "an accessibility-aware transit journey planner",
+    title: "AccessTransit: an accessibility-aware transit journey planner",
+    context: "2026 · Solo case study",
+    summary:
+      "A journey planner for Bay Area transit riders with accessibility needs, built to answer not just whether a route is accessible, but whether it'll still be accessible by the time you get there.",
+    tags: ["Product design", "UX/UI", "Applied AI"],
+    year: "2026",
+    draft: false,
+    cover: "/images/able/extract-08.png",
+    coverFit: "contain",
+  },
+  {
+    slug: "northstar",
+    entry: "02",
     name: "Northstar",
     tagline: "AI-powered disaster response coordination",
     title: "Northstar: AI-powered disaster response coordination",
@@ -19,7 +34,7 @@ export const projects = [
   },
   {
     slug: "everwood",
-    entry: "02",
+    entry: "03",
     name: "Everwood",
     tagline: "intergenerational story sharing",
     title: "Everwood: intergenerational story sharing",
@@ -34,7 +49,7 @@ export const projects = [
   },
   {
     slug: "reneal",
-    entry: "03",
+    entry: "04",
     name: "Reneal IEO",
     tagline: "nonprofit site redesign",
     title: "Reneal IEO: nonprofit site redesign",
@@ -48,7 +63,7 @@ export const projects = [
   },
   {
     slug: "rate",
-    entry: "04",
+    entry: "05",
     name: "R'ATE",
     tagline: "a dish-level food rating app for UC Riverside",
     title: "R'ATE: a dish-level food rating app for UC Riverside",

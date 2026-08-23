@@ -111,7 +111,7 @@ export default function Northstar() {
             ← back to journal
           </Link>
           <p className="font-mono text-[11px] text-indigo-soft mb-4 mt-10">
-            ENTRY 01 · 2026 · AI TECH VENTURE CHALLENGE
+            ENTRY 02 · 2026 · AI TECH VENTURE CHALLENGE
           </p>
           <h1 className="font-serif text-4xl md:text-6xl leading-[0.98] max-w-2xl">
             Northstar
