@@ -1,6 +1,8 @@
 // Real project data. 8dge was pulled (SWE-internship-heavy, not product/UI-UX
 // fit for this portfolio) — its case study stays at src/pages/case-studies/EightDge.jsx,
-// unrouted, as a temporary hold rather than deleted.
+// unrouted, as a temporary hold rather than deleted. Reneal is on the same kind
+// of hold: still genuinely in progress and the weakest entry as written, staying
+// at src/pages/case-studies/Reneal.jsx until it has a real outcomes section to show.
 export const projects = [
   {
     slug: "accesstransit",
@@ -48,22 +50,8 @@ export const projects = [
     cover: "/images/everwood/cover.png",
   },
   {
-    slug: "reneal",
-    entry: "04",
-    name: "Reneal IEO",
-    tagline: "nonprofit site redesign",
-    title: "Reneal IEO: nonprofit site redesign",
-    context: "2025 · Nonprofit serving educators",
-    summary:
-      "A nonprofit's WordPress site, redesigned in Figma and rebuilt in Framer: still in progress.",
-    tags: ["UX", "UI", "Figma", "Framer"],
-    year: "2025",
-    draft: false,
-    cover: "/images/reneal/cover.png",
-  },
-  {
     slug: "rate",
-    entry: "05",
+    entry: "04",
     name: "R'ATE",
     tagline: "a dish-level food rating app for UC Riverside",
     title: "R'ATE: a dish-level food rating app for UC Riverside",
