@@ -26,11 +26,11 @@ export default function Skills({ hideBio = false }) {
           Comfortable moving between a whiteboard and a codebase.
         </h2>
         {!hideBio && (
-          <p className="mt-6 max-w-xl text-ink-soft">
-            Design and web development have always pulled at her in equal
+          <p className="mt-6 max-w-3xl text-ink-soft">
+            Design and web development have always pulled at me in equal
             measure, and UI/UX is where the two meet. A computer science
-            background lets her solve real problems for real people while
-            keeping the result intuitive and accessible. She's always
+            background lets me solve real problems for real people while
+            keeping the result intuitive and accessible. I'm always
             learning, bouncing ideas around with others, and working toward
             becoming a designer and engineer who actually bridges that gap
             rather than picking one side.

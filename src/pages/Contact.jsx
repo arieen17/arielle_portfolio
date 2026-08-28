@@ -1,5 +1,3 @@
-import DraftText from "../components/DraftText";
-
 export default function Contact() {
   return (
     <div className="max-w-content mx-auto px-6 md:px-10 py-20 md:py-28">
@@ -44,11 +42,6 @@ export default function Contact() {
           resume ↗
         </a>
       </div>
-
-      <DraftText className="max-w-md">
-        A proper contact form is on the way. For now, email is the most
-        direct route.
-      </DraftText>
     </div>
   );
 }

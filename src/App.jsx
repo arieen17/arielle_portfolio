@@ -12,7 +12,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import CaseStudy from "./pages/CaseStudy";
 import Everwood from "./pages/case-studies/Everwood";
-import Reneal from "./pages/case-studies/Reneal";
 import Rate from "./pages/case-studies/Rate";
 import Northstar from "./pages/case-studies/Northstar";
 import AccessTransit from "./pages/case-studies/AccessTransit";
@@ -35,7 +34,6 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/work/everwood" element={<Everwood />} />
-          <Route path="/work/reneal" element={<Reneal />} />
           <Route path="/work/rate" element={<Rate />} />
           <Route path="/work/northstar" element={<Northstar />} />
           <Route path="/work/accesstransit" element={<AccessTransit />} />
